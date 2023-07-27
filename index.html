@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U Convert</title>
+    <link rel="icon" type="image/x-icon" href="/u-convert-square-favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/8efc22d7af.js" crossorigin="anonymous"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="/u-convert-logo.png" alt="nav-logo" class="nav-logo">
+            <div class="nav-branding">
+                <h1>U Convert</h1>
+            </div>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <button class="category-btn distance-btn nav-link"><i class="fa-solid fa-car"></i></button>  
+                </li>
+                <li class="nav-item">
+                    <button class="category-btn length-btn nav-link"><i class="fa-solid fa-ruler"></i></button>  
+                </li>
+                <li class="nav-item">
+                    <button class="category-btn money-btn nav-link"><i class="fa-solid fa-money-bill-1"></i></button> 
+                </li>
+                <li class="nav-item">
+                    <button class="category-btn weight-btn nav-link"><i class="fa-solid fa-scale-unbalanced"></i></button>  
+                </li>
+                <li class="nav-item">
+                    <button class="category-btn temp-btn nav-link"><i class="fa-solid fa-temperature-three-quarters"></i></button> 
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <div id="main-container" class="start-modal active">
+        <div class="start-modal-container">
+            <h1 class="modal-text">I need to convert...</h1>
+            <li class="modal-link">
+                <button class="category-btn-modal distance-btn modal-link-distance-btn"><i class="fa-solid fa-car"></i> Distance</button>  
+            </li>
+            <li class="modal-link">
+                <button class="category-btn-modal length-btn modal-link-length-btn"><i class="fa-solid fa-ruler"></i> Length</button>  
+            </li>
+            <li class="modal-link">
+                <button class="category-btn-modal money-btn modal-link-money-btn"><i class="fa-solid fa-money-bill-1"></i> Money</button> 
+            </li>
+            <li class="modal-link">
+                <button class="category-btn-modal weight-btn modal-link-weight-btn"><i class="fa-solid fa-scale-unbalanced"></i> Weight</button>  
+            </li>
+            <li class="modal-link">
+                <button class="category-btn-modal temp-btn modal-link-temp-btn"><i class="fa-solid fa-temperature-three-quarters"></i> Temperature</button> 
+            </li>
+
+        </div>
+
+
+    </div>
+
+    <div id="main-container" class="distance">
+        <div id="header-div">
+            <h1><i class="fa-solid fa-car"></i> Distance</h1>
+            <p>in miles</p>
+            <input class="input-distance" type="text" id="input" placeholder="0">
+            <button class="convert-button convert-distance">Convert</button>
+        </div>
+
+        <div id="bottom-container">
+            <div class="units-container" id="km">
+                <h2>Kilometers (km)</h2>
+                <p id="length"><span class="new-miles">0</span> miles = <span class="new-km">0</span> km</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-container" class="length">
+        <div id="header-div">
+            <h1><i class="fa-solid fa-ruler"></i> Length</h1>
+            <p>in inches</p>
+            <input class="input-length" type="text" id="input" placeholder="0">
+            <button class="convert-button convert-length">Convert</button>
+        </div>
+
+        <div id="bottom-container length">
+            <div class="units-container" id="in">
+                <h2>Centimeters (cm)</h2>
+                <p id="length"><span class="new-inches">0</span> in. = <span class="new-cm">0</span> cm.</p>
+            </div>
+            <div class="units-container" id="in">
+                <h2>Meters (m)</h2>
+                <p id="length"><span class="new-inches-2">0</span> in. = <span class="new-m">0</span> m.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="main-container" class="money">
+        <div id="header-div">
+            <h1><i class="fa-solid fa-money-bill-1"></i> Money</h1>
+            <p>in USD</p>
+            <input class="input-money" type="text" id="input" placeholder="$">
+            <button class="convert-button convert-money">Convert</button>
+        </div>
+
+        <div id="bottom-container money">
+            <div class="units-container" id="euros">
+                <h2>Euros</h2>
+                <p id="length">$<span class="new-dollars">0</span> = &euro;<span class="new-euros">0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-container" class="weight">
+        <div id="header-div">
+            <h1><i class="fa-solid fa-scale-unbalanced"></i> Weight</h1>
+            <p>in lbs.</p>
+            <input class="input-weight" type="text" id="input" placeholder="0">
+            <button class="convert-button convert-weight">Convert</button>
+        </div>
+
+        <div id="bottom-container weight">
+            <div class="units-container" id="kgs">
+                <h2>Kilograms (kgs)</h2>
+                <p id="length"><span class="new-lbs">0</span> lb(s) = <span class="new-kgs">0</span> kg(s)</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="main-container" class="temperature">
+        <div id="header-div">
+            <h1><i class="fa-solid fa-temperature-three-quarters"></i> Temperature</h1>
+            <p>in Fahrenheit (F)</p>
+            <input class="input-temp" type="text" id="input" placeholder="0">
+            <button class="convert-button convert-temp">Convert</button>
+        </div>
+
+        <div id="bottom-container temperature">
+            <div class="units-container" id="celsius">
+                <h2>Celsius (C)</h2>
+                <p id="length"><span class="new-F-degrees">0</span>&deg;F = <span class="new-C-degrees">-17.7778</span>&deg;C</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
