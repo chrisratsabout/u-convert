@@ -186,9 +186,14 @@ li {
 .length-btn:hover,
 .money-btn:hover,
 .weight-btn:hover,
-.temp-btn:hover {
+.temp-btn:hover
+ {
     filter: brightness(85%);
     cursor: pointer;
+    
+    > i {
+        rotate: 45deg;
+    }
 }
 
 /****MAIN CONTAINER****/
@@ -361,6 +366,8 @@ button {
     filter: brightness(85%);
     cursor: pointer;
 }
+
+
 
 
 /*** NAV BAR MEDIA QUERY***/
