@@ -117,7 +117,6 @@ function removeClasses() {
     moneyContainer.classList.remove("active");
     lengthContainer.classList.remove("active");
     weightContainer.classList.remove("active");
-    console.log("worked")
 }
 
 
