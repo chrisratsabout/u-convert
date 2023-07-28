@@ -192,7 +192,8 @@ li {
     cursor: pointer;
     
     > i {
-        rotate: 45deg;
+        transition: ease-in-out .3s;
+        rotate: 35deg;
     }
 }
 
