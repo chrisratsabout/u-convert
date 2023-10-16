@@ -180,7 +180,7 @@ const dollarsToEuros = .91;
 convertMoneyBtn.addEventListener("click", function () {
     newDollars.innerHTML = inputMoney.value;
     let newEuroValue = inputMoney.value * dollarsToEuros.toFixed(2);
-    newEuros.textContent = newEuroValue;
+    newEuros.textContent = parseFloat(newEuroValue).toFixed(2);
     inputMoney.value = "";
 })
 
